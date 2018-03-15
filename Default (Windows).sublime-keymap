@@ -1,0 +1,81 @@
+
+[
+	// { "keys": ["ctrl+shift+enter"], "command": "open_in_browser" },
+	// { "keys": ["alt+space"], "command": "auto_complete" },
+	// { "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+	// { "keys": ["ctrl+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+	// { "keys": ["ctrl+;"], "command": "show_overlay", "args": {"overlay": "goto", "text": "#"} },
+
+	//chrome""
+	{ "keys":["f1"], "command":"side_bar_files_open_with",
+		"args":{
+			"paths":[],
+			"application":"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+		"extensions":".*"}},
+	//360
+	{ "keys":["f2"], "command":"side_bar_files_open_with",
+		"args":{
+			"paths":[],
+			"application":"D:\\360se\\360se6\\Application\\360se.exe",
+		"extensions":".*"}},
+	//ie
+	{ "keys":["f3"], "command":"side_bar_files_open_with",
+		"args":{
+			"paths":[],
+			"application":"C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe",
+		"extensions":".*"}},
+		{"keys": ["ctrl+alt+shift+a"], "command": "reindent" , "args":{"single_line": false}},
+		{ "keys": ["ctrl+alt+k"], "command": "upper_case" },
+		{ "keys": ["ctrl+alt+k"], "command": "lower_case" },
+	 	// { "keys": ["ctrl+s"], "command": "gulp_last" },
+	 	{ "keys": ["ctrl+1"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+
+	 	{
+	 		"keys": ["tab"],
+	 		"command": "expand_abbreviation_by_tab",
+
+    // put comma-separated syntax selectors for which 
+    // you want to expandEmmet abbreviations into "operand" key 
+    // instead of SCOPE_SELECTOR.
+    // Examples: source.js, text.html - source
+    "context": [{
+    	"operand": "source.js",
+    	"operator": "equal",
+    	"match_all": true,
+    	"key": "selector"
+    },
+
+        // run only if there's no selected text
+        {
+        	"match_all": true,
+        	"key": "selection_empty"
+        },
+
+        // don't work if there are active tabstops
+        {
+        	"operator": "equal",
+        	"operand": false,
+        	"match_all": true,
+        	"key": "has_next_field"
+        },
+
+        // don't work if completion popup is visible and you
+        // want to insert completion with Tab. If you want to
+        // expand Emmet with Tab even if popup is visible -- 
+        // remove this section
+        {
+        	"operand": false,
+        	"operator": "equal",
+        	"match_all": true,
+        	"key": "auto_complete_visible"
+        }, {
+        	"match_all": true,
+        	"key": "is_abbreviation"
+        }
+    ]
+}
+]
+
+
+

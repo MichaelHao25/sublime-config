@@ -1,0 +1,31 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"All Autocomplete",
+		"AutoFileName",
+		"Babel",
+		"Boxy Theme",
+		"BracketHighlighter",
+		"ChineseLocalizations",
+		"Color Highlighter",
+		"ConvertToUTF8",
+		"CSS Comments",
+		"DocBlockr",
+		"Emmet",
+		"Gulp",
+		"jQuery",
+		"JsFormat",
+		"LiveStyle",
+		"Nodejs",
+		"Package Control",
+		"Pretty JSON",
+		"SideBarEnhancements",
+		"Stylus",
+		"SublimeOnSaveBuild"
+	]
+}
